@@ -34,7 +34,7 @@ const additionEqn = (A, B) => {
     };
 const subtractionEqn = (A, B) => {
     return A -= B;
-    }
+    };
 const multiplicationEqn = (A, B) => {
     return A * B;
     };
