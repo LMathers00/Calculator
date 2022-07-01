@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>JS Calculator Project</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
-<body>
-    
-<div class="calculator"></div>
-    <div class="calculator__screen">0</div>
-    <div class="calculator__keys">
-        <!-- Not sure about data-action atm----used to help separate type of output we want when the button is pressed -->
-        <button class="calculator__operator" data-action="add">+</button>
-        <button class="calculator__operator" data-action="subtract">-</button>
-        <button class="calculator__operator" data-action="multiply">X</button>
-        <button class="calculator__operator" data-action="divide">÷</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>0</button>
-        <button data-action="decimal">.</button>
-        <button data-action="all-clear">AC</button>
-        <button class="calculator__equals" data-action="calculate">=</button>
+<body> 
+<main class = "container">
+    <h1 id = "heading">Javacript Calculator</h1>
+        <div class = "calculator">
+            <h2 id = "calculator__output"></h2>
+            <button class = "calculator__operator" value = "-" >-</button>
+            <button class = "calculator__operator" value ="+">+</button>
+            <button class = "calculator__operator" value ="/">÷</button>
+            <button class = "calculator__operator" value ="*">X</button>
+            <button value =""  id = "calculator__all-clear" onclick="clearValues(event)">C</button>
+            <button class = "calculator__number" value ="1">1</button>
+            <button class = "calculator__number" value ="2">2</button>
+            <button class = "calculator__number" value ="3">3</button>
+            <button class = "calculator__number" value ="4">4</button>
+            <button class = "calculator__number" value ="5">5</button>
+            <button class = "calculator__number" value ="6">6</button>
+            <button class = "calculator__number" value ="7">7</button>
+            <button class = "calculator__number" value ="8">8</button>
+            <button class = "calculator__number" value ="9">9</button>
+            <button class = "calculator__number" value ="0">0</button>
+            <button class = "calculator__number" value ="." id = "decimal"">.</button>
+            <button value = "=" id = "calculator__equals" >=</button>
     </div>
-
-
+    </div>
+</main>
 </body>
 </html>
