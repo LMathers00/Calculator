@@ -1,5 +1,5 @@
 * {
-  background-color: aqua;
+  background-color: blueviolet;
   font-size: 1.5rem;
 }
 
@@ -79,15 +79,25 @@
   display: grid;
   grid-template: 50px 75px 75px 75px 75px/1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "display display display display display" "one two three clear clear " "four five six plus minus" "seven eight nine multiply divide" "nought decimal decimal equals equals";
-}
-
-.calculator__display {
-  background-color: aqua;
+  padding: 50px;
+  padding-top: 0;
+  background-color: blue;
 }
 
 .calculator__output {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 1rem;
   background-color: aqua;
+  padding: 0;
+}
+
+button {
+  color: black;
+  background-color: rgb(167, 143, 7);
+}
+
+button:active {
+  background-color: aliceblue;
 }/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
 *{
-    background-color: aqua;
+    background-color: blueviolet;
     font-size: 1.5rem;
 }
 
@@ -32,17 +32,29 @@
     "four five six plus minus"
     "seven eight nine multiply divide"
     "nought decimal decimal equals equals";
+    padding: 50px;
+    padding-top: 0;
+    background-color: blue;
 }
 
-.calculator__display{
-    background-color: aqua;
-}
 
 .calculator__output{
     display: flex;
     align-items: center;
     justify-content: center;
+    //font-size: 3rem;
+    height: 1rem;
     background-color: aqua;
+    padding: 0;
+}
+
+button{
+    color: black;
+    background-color: rgb(167, 143, 7);
+}
+
+button:active {
+    background-color: aliceblue;
 }
 
 //Having issue with decimal calculations where its corrects but adds alot
