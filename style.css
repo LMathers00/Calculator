@@ -80,7 +80,6 @@
   grid-template-areas: "display display display display display" "one two three clear clear " "four five six plus minus" "seven eight nine multiply divide" "nought decimal decimal equals equals";
   padding: 10px;
   padding-top: 0;
-  background-color: blue;
 }
 
 .container {
@@ -91,6 +90,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 3rem;
+  color: rgb(22, 255, 22);
   height: 1rem;
   padding: 0;
 }

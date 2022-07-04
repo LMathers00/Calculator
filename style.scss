@@ -34,7 +34,7 @@
     "nought decimal decimal equals equals";
     padding: 10px;
     padding-top: 0;
-    background-color: blue;
+    //background-color: blue;
 }
 
 .container {
@@ -46,7 +46,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    //font-size: 3rem;
+    font-size: 3rem;
+    color: rgb(22, 255, 22);
     height: 1rem;
     //background-color: aqua;
     padding: 0;
@@ -65,6 +66,7 @@ button:active {
     background-color: aliceblue;
 }
 
+//My mind is convinced there's an i in query
 @media screen and (min-width: 768px){
     .calculator{
         padding-left: 100px ;
