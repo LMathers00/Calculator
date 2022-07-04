@@ -9,85 +9,17 @@ $button-active: aliceblue;
     background-color: $background-color;
     font-size: 1.5rem;
 }
+@import "./Design/grid";
 
 
-.calculator__display {grid-area: display;}
-.calculator__number-one {grid-area: one;}
-.calculator__number-two {grid-area: two;}
-.calculator__number-three {grid-area: three;}
-.calculator__number-four {grid-area: four;}
-.calculator__number-five {grid-area: five;}
-.calculator__number-six {grid-area: six;}
-.calculator__number-seven {grid-area: seven;}
-.calculator__number-eight {grid-area: eight;}
-.calculator__number-nine {grid-area: nine;}
-.calculator__number-zero {grid-area: nought;}
-.calculator__operator-minus {grid-area: minus;}
-.calculator__operator-plus {grid-area: plus;}
-.calculator__operator-divide {grid-area: divide;}
-.calculator__operator-times {grid-area: multiply;}
-.calculator__decimal {grid-area: decimal;}
-.calculator__equals {grid-area: equals;}
-.calculator__all-clear {grid-area: clear;}
-
-.calculator{
-    display: grid;
-    //grid-template: 50px 75px 75px 75px 75px / 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "display display display display display"
-    "one two three clear clear "
-    "four five six plus minus"
-    "seven eight nine multiply divide"
-    "nought decimal decimal equals equals";
-    padding: 10px;
-    padding-top: 0;
-    //background-color: blue;
-
-}
 
 .container {
     background-color: $background-color;
 }
 
-
-.calculator__output{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    color: $display-color;
-    height: 1rem;
-    //background-color: aqua;
-    padding: 0;
-}
-
-button{
-    color: black;
-    background-color: $button-color;
-     margin: 0.2rem;
-     border: 4px solid $button-border;
-     font-size: 2rem;
-     box-shadow: 0.3rem 0.2rem $button-shadow;
-}
-
-button:active {
-    background-color: $button-active;
-}
-
-//My mind is convinced there's an i in query
-@media screen and (min-width: 768px){
-    .calculator{
-        padding-left: 100px ;
-        padding-right: 100px;
-    }
-}
-
-@media screen and (min-width: 1024px){
-    .calculator{
-        padding-left: 150px ;
-        padding-right: 150px;
-    }
-}
+@import "./Design/output";
+@import "./Design/buttons";
+@import "./Design/media"
 //Having issue with decimal calculations where its corrects but adds alot
 //of zeros with then an extra number that makes it incorrect
 // would parsefloat(variable.toFixed(x)) would fix the issue

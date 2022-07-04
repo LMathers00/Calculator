@@ -1,0 +1,10 @@
+.calculator__output{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: $display-color;
+    height: 1rem;
+    //background-color: aqua;
+    padding: 0;
+}
