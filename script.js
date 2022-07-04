@@ -97,3 +97,7 @@ equals.addEventListener("click", () => {
     equationArray = [];
     precursorValue = 0;
 });
+
+
+//I am aware there is probably a lack of commit history for the javascript itself 
+// so i have tried to make up for that by having a detailed commentry throughout
