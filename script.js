@@ -97,6 +97,7 @@ equals.addEventListener("click", () => {
     equationArray = [];
     precursorValue = 0;
 });
+//still an issue regarding decimal multiplication and i think the solution may be to do with parsefloat and then .toFixed but havent tested it
 
 
 //I am aware there is probably a lack of commit history for the javascript itself 
