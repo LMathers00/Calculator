@@ -6,6 +6,7 @@ $button-shadow: black;
 $button-active: aliceblue;
 
 *{
+    background-image: url("./violet\ maths\ purple\ background.jpg");
     background-color: $background-color;
     font-size: 1.5rem;
 }
@@ -46,18 +47,20 @@ $button-active: aliceblue;
 
 .container {
     background-color: $background-color;
+    background-image: none;
 }
 
 
 .calculator__output{
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     font-size: 3rem;
     color: $display-color;
     height: 1rem;
     //background-color: aqua;
     padding: 0;
+    background-image: none;
 }
 
 button{
@@ -67,10 +70,12 @@ button{
      border: 4px solid $button-border;
      font-size: 2rem;
      box-shadow: 0.3rem 0.2rem $button-shadow;
+     background-image: none;
 }
 
 button:active {
     background-color: $button-active;
+    background-image: none;
 }
 
 //My mind is convinced there's an i in query
