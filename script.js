@@ -42,7 +42,7 @@ const dividsionSum = (A, B) => {
     return A / B;
     };
 const signFlip =(A) => {
-    return -A
+    return -1 * A
 }
  
 
@@ -96,6 +96,3 @@ equals.addEventListener("click", () => {
 });
 //still an issue regarding decimal multiplication and i think the solution may be to do with parsefloat and then .toFixed but havent tested it
 
-const plusMinus = (number) => {
-return -Math.abs(number);
-}
