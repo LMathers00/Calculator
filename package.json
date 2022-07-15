@@ -1,0 +1,20 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "Making a functioning calculator using javascript, HTML and css\r This calculator accepts multiple inputs and returns an answer with all four of the basic operators functioning correctly\r If i were to go further on this i would begin to add features similar to a scientific calculator such as square root to sine and cosine etc",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LMathers00/Calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LMathers00/Calculator/issues"
+  },
+  "homepage": "https://github.com/LMathers00/Calculator#readme"
+}

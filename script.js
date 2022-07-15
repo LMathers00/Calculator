@@ -41,6 +41,9 @@ const multiplicationEqn = (A, B) => {
 const dividsionSum = (A, B) => {
     return A / B;
     };
+const signFlip =(A) => {
+    return -A
+}
  
 
 //Gonna try and use reduce so that i have a continuous equation - so that results are used as the first number in the equation
@@ -51,24 +54,22 @@ const getAnswer = () => {
             answer = equationArray.reduce(additionEqn);
             //console.log(answer)
             return output.innerHTML = answer;
-            break;
             case "-":
             answer = equationArray.reduce(subtractionEqn);
             return output.innerHTML = answer;
-            break;
             case "*":
             answer = equationArray.reduce(multiplicationEqn);
             return output.innerHTML = answer;
-            break;
             case "/":
             answer = equationArray.reduce(dividsionSum);
             return output.innerHTML = answer;
-            break;
+            case "+/-":
+            answer = equationArray.reduce(signFlip);
+            return output.innerHTML = answer;
             default:
             return output.innerHTML = "error"
         }
     }
-    //the breaks say they are unreachable code but the switch case works 
 
 
 //When i press an operator symbol i want the latest value to become the precursor value so that a second number can become the latest value
@@ -99,6 +100,6 @@ equals.addEventListener("click", () => {
 });
 //still an issue regarding decimal multiplication and i think the solution may be to do with parsefloat and then .toFixed but havent tested it
 
-
-//I am aware there is probably a lack of commit history for the javascript itself 
-// so i have tried to make up for that by having a detailed commentry throughout
+const plusMinus = (number) => {
+return -Math.abs(number);
+}

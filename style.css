@@ -75,9 +75,13 @@
   grid-area: clear;
 }
 
+.calculator__plus-minus {
+  grid-area: plusMinus;
+}
+
 .calculator {
   display: grid;
-  grid-template-areas: "display display display display display" "one two three clear clear " "four five six plus minus" "seven eight nine multiply divide" "nought decimal decimal equals equals";
+  grid-template-areas: "display display display display display" "one two three clear clear " "four five six plus minus" "seven eight nine multiply divide" "nought decimal plusMinus equals equals";
   padding: 10px;
   padding-top: 0;
 }
