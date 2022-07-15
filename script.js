@@ -52,7 +52,6 @@ const getAnswer = () => {
         switch (operatorUse) {
             case "+":
             answer = equationArray.reduce(additionEqn);
-            //console.log(answer)
             return output.innerHTML = answer;
             case "-":
             answer = equationArray.reduce(subtractionEqn);
@@ -80,7 +79,6 @@ calculatorOperators.forEach((operator) => {
     precursorValue = output.innerHTML;
     equationArray.push(parseFloat(precursorValue));
     operatorUse = event.target.value;
-    //console.log(equationArray);
 //Below is to ensure that the latest number 'disappears' after an operator is clicked 
     latestValue = "";
     output.innerHTML = latestValue;
@@ -90,8 +88,6 @@ calculatorOperators.forEach((operator) => {
 //despite the value 'disappearing' we need to save it even when we add a new value to the array
 //Not running perfectly so maybe i need to add a function to see if there is a precursor and operator in order to get an answer 
 equals.addEventListener("click", () => {
-    //console.log(equationArray);
-    //console.log(operatorUse)
     latestValue = output.innerHTML;
     equationArray.push(parseFloat(latestValue));
     getAnswer();
